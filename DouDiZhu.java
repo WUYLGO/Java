@@ -1,4 +1,4 @@
-package com.itheima.·¢ÅÆ°¸Àı;
+package com.itheima.å‘ç‰Œæ¡ˆä¾‹;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,8 +9,9 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
- * ·¢ÅÆ°¸Àı+ÅÅĞò
- * 
+ * å‘ç‰Œæ¡ˆä¾‹+æ’åº
+ * æ–—åœ°ä¸»å‘ç‰Œæ¡ˆä¾‹,å‘å¥½ç‰Œåæ’åº,è¾“å…¥A\B\CæŠ¢åœ°ä¸»,å³å¯å°†åº•ç‰ŒåŠ å…¥åœ°ä¸»ç‰Œä¸­
+ * æ³¨æ„:ä¸å«å‡ºç‰ŒåŠæ ¡éªŒå‡ºç‰Œè§„åˆ™éƒ¨åˆ†;
  * @author unlinks
  *
  */
@@ -24,11 +25,11 @@ public class DouDiZhu {
 		ArrayList<String> lt2 = new ArrayList<>();
 		ArrayList<String> lt3 = new ArrayList<>();
 		Map<Integer, String> map = new HashMap<>();
-		ArrayList<Integer> lt4 = new ArrayList<>();// ´æ·ÅË÷Òı
-		lt.add("ºìÌÒ");
-		lt.add("ºÚÌÒ");
-		lt.add("·½¿é");
-		lt.add("Ã·»¨");
+		ArrayList<Integer> lt4 = new ArrayList<>();// å­˜æ”¾ç´¢å¼•
+		lt.add("çº¢æ¡ƒ");
+		lt.add("é»‘æ¡ƒ");
+		lt.add("æ–¹å—");
+		lt.add("æ¢…èŠ±");
 		lt2.add("2");
 		lt2.add("3");
 		lt2.add("4");
@@ -51,8 +52,8 @@ public class DouDiZhu {
 				n++;
 			}
 		}
-		map.put(53, "´óÍõ");
-		map.put(54, "Ğ¡Íõ");
+		map.put(53, "å¤§ç‹");
+		map.put(54, "å°ç‹");
 		lt4.add(53);
 		lt4.add(54);
 
@@ -118,25 +119,25 @@ public class DouDiZhu {
 		System.out.println("B:" + p5);
 		System.out.println("C:" + p6);
 		Scanner sc = new Scanner(System.in);
-		System.out.println("µØÖ÷ÅÆ:" + d2);
+		System.out.println("åœ°ä¸»ç‰Œ:" + d2);
 		String s = sc.nextLine();
-		if (s.equals("AÇÀµØÖ÷")) {
+		if (s.equals("AæŠ¢åœ°ä¸»")) {
 			p4.addAll(d2);
-			System.out.println("AµÄÅÆ:" + p4);
-		} else if (s.equals("BÇÀµØÖ÷")) {
+			System.out.println("Açš„ç‰Œ:" + p4);
+		} else if (s.equals("BæŠ¢åœ°ä¸»")) {
 			p5.addAll(d2);
-			System.out.println("BµÄÅÆ" + p5);
-		} else if (s.equals("CÇÀµØÖ÷")) {
+			System.out.println("Bçš„ç‰Œ" + p5);
+		} else if (s.equals("CæŠ¢åœ°ä¸»")) {
 			p6.addAll(d2);
-			System.out.println("CµÄÅÆ" + p6);
+			System.out.println("Cçš„ç‰Œ" + p6);
 		} else {
-			System.out.println("Á÷¾Ö,ÖØĞÂ¿ªÊ¼");
+			System.out.println("æµå±€,é‡æ–°å¼€å§‹");
 		}
 
-		System.out.println("×Ü¹²ÓĞ" + lt4.size() + "ÕÅÅÆ");
-		System.out.println("AµÄÅÆÓĞ" + p4.size() + "ÕÅ");
-		System.out.println("BµÄÅÆÓĞ" + p5.size() + "ÕÅ");
-		System.out.println("CµÄÅÆÓĞ" + p6.size() + "ÕÅ");
+		System.out.println("æ€»å…±æœ‰" + lt4.size() + "å¼ ç‰Œ");
+		System.out.println("Açš„ç‰Œæœ‰" + p4.size() + "å¼ ");
+		System.out.println("Bçš„ç‰Œæœ‰" + p5.size() + "å¼ ");
+		System.out.println("Cçš„ç‰Œæœ‰" + p6.size() + "å¼ ");
 
 	}
 }
